@@ -1,0 +1,16 @@
+.hero {
+  @extend %flex-center-ja;
+  height: 360px;
+
+  color: white;
+
+  background-image: url('https://ventanasvital.es/wp-content/uploads/2018/02/inner_HEADER.jpg');
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: 50% 50%!important;
+}
+
+.hero h1 {
+  font-size: 36px;
+  text-align: center;
+}

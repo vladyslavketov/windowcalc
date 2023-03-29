@@ -1,20 +1,20 @@
 {
-  "name": "template-parcel",
+  "name": "windowcalc",
   "version": "1.0.0",
   "source": "src/pages/index.html",
   "scripts": {
     "start": "parcel src/pages/*.html",
     "build": "parcel build"
   },
-  "homepage": "https://github.com/vladyslavketov/template-parcel",
+  "homepage": "https://github.com/vladyslavketov/windowcalc",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vladyslavketov/template-parcel.git"
+    "url": "git+https://github.com/vladyslavketov/windowcalc.git"
   },
   "author": "Vladyslav Ketov",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/vladyslavketov/template-parcel/issues"
+    "url": "https://github.com/vladyslavketov/windowcalc/issues"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.3",

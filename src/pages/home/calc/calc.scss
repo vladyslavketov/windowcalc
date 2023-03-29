@@ -1,0 +1,77 @@
+.calc__steps {
+  padding: 20px;
+}
+
+.calc__step:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.calc-form {
+  @extend %flex-center-ja;
+  flex-direction: column;
+  gap: 16px;
+
+  padding: 20px;
+  // width: 100%;
+  // max-width: 650px;
+
+  background-color: azure;
+  @extend %border-radius;
+}
+
+.calc-form__box,
+.calc-form__box--2 {
+  width: 100%;
+  
+  @extend %border-radius;
+  background-color: rgb(161, 181, 191);
+  border: 1px solid rgb(161, 181, 191);
+}
+
+.calc-form__box{
+  padding: 0 12px;
+}
+
+.calc-form__box-title {
+  text-align: center;
+  padding: 8px;
+}
+
+.calc-form__category-list {
+  display: flex;
+  gap: 40px;
+  padding: 16px;
+
+  background-color: azure;
+  white-space: nowrap;
+  overflow: auto;
+
+  &.isHidden {
+    display: none;
+  }
+}
+
+.calc-form__category-item {
+  flex: 0 0 auto;
+
+  @extend %border-radius;
+  border: 1px solid rgb(161, 181, 191);
+}
+
+.calc-form label {
+  @extend %flex-center-ja;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px 0; 
+}
+
+.calc-form__category-item img{
+  @extend %cursor;
+}
+
+.calc-form select {
+  width: 100%;
+  padding: 12px;
+
+  @extend %border-radius;
+}
