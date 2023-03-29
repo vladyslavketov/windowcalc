@@ -10,10 +10,7 @@
   @extend %flex-center-ja;
   flex-direction: column;
   gap: 16px;
-
   padding: 20px;
-  // width: 100%;
-  // max-width: 650px;
 
   background-color: azure;
   @extend %border-radius;
@@ -22,14 +19,11 @@
 .calc-form__box,
 .calc-form__box--2 {
   width: 100%;
+  padding: 12px;
   
   @extend %border-radius;
   background-color: rgb(161, 181, 191);
   border: 1px solid rgb(161, 181, 191);
-}
-
-.calc-form__box{
-  padding: 0 12px;
 }
 
 .calc-form__box-title {
@@ -37,7 +31,8 @@
   padding: 8px;
 }
 
-.calc-form__category-list {
+.calc-form__category-list,
+.calc-form__color-list {
   display: flex;
   gap: 40px;
   padding: 16px;
@@ -51,7 +46,8 @@
   }
 }
 
-.calc-form__category-item {
+.calc-form__category-item,
+.calc-form__color-item {
   flex: 0 0 auto;
 
   @extend %border-radius;
@@ -62,16 +58,56 @@
   @extend %flex-center-ja;
   flex-direction: column;
   gap: 8px;
-  padding: 12px 0; 
 }
 
-.calc-form__category-item img{
+.calc-form__category-item img,
+.calc-form__color-item img {
   @extend %cursor;
+  @extend %border-radius;
 }
+
+
 
 .calc-form select {
   width: 100%;
   padding: 12px;
 
   @extend %border-radius;
+}
+
+
+.calc-form__color-list {
+  gap: 8px;
+  justify-content: center;
+
+  background-color: rgb(161, 181, 191);
+}
+
+.size__box {
+  @extend %flex-center-ja;
+  gap: 20px;
+}
+
+.size__box input {
+  width: 80px;
+  height: 20px;
+  padding: 12px 8px;
+
+  @extend %border-radius;
+}
+
+.size__img-box {
+  @extend %flex-center-ja;
+  margin-top: 20px;
+}
+
+.size__img-box .calc-form__category-img {
+  height: 200px;
+}
+
+
+
+.calc-form__category-item.checked {
+  padding: 40px;
+  background-color: darkorange;
 }
