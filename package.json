@@ -4,7 +4,7 @@
   "source": "src/pages/index.html",
   "scripts": {
     "start": "parcel src/pages/*.html",
-    "build": "parcel build"
+    "build": "parcel build --public-url /windowcalc/"
   },
   "homepage": "https://github.com/vladyslavketov/windowcalc",
   "repository": {
